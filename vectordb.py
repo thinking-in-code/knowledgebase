@@ -26,7 +26,8 @@ def query_db(question: str) -> list[str]:
 
 if __name__ == '__main__':
     # 将向量化的切片存储到向量数据库
-    create_db()
+    # create_db()
     # 向量库中查询
     question = "关羽为什么和红孩儿打架？"
-    query_db(question)
+    query_res = query_db(question)
+    print(query_res)
